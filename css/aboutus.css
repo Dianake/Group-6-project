@@ -1,0 +1,58 @@
+body {
+  font-family: "Lato", serif;
+}
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+.about-section {
+  text-align: center;
+  background-color: #5d474d;
+  color: white;
+  padding: 50px;
+}
+
+.services {
+  text-align: center;
+
+  text-shadow: 1px 2px 2px #d5e3e2;
+}
+.child {
+  align-items: center;
+  display: flex;
+  align-items: flex-start;
+}
+
+.activity {
+  text-align: center;
+  border: 2px solid #008075;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 100%;
+  flex-grow: 1;
+}
+.activity img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .child {
+    display: block;
+  }
+}
+.btn:hover {
+  box-shadow: #bbb 12px 16px 0;
+}
+.footer {
+  padding: 20px;
+  background-color: #999191;
+}
+.social {
+  padding: 5px;
+  background-color: white;
+  padding-left: 300px;
+}
