@@ -19,6 +19,10 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/3210cf72d8.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -38,26 +42,43 @@
   </head>
 
   <body>
+    <!--navbar-->
     <div class="main">
       <nav>
         <ul>
           <li><a href="#">HOME</a></li>
           <li><a href="#">DESTINATIONS</a></li>
-          <li><a href="#">ACTIVITIES</a></li>
+          <li><a href="#">GALLERY</a></li>
           <li><a href="#">CONTACT US</a></li>
         </ul>
       </nav>
     </div>
     <!--About us section-->
     <div class="about-section">
+      <img src="./pictures/maldives.jpeg" />
       <h1>About us</h1>
-      <p>Some text about who we are and what we do.</p>
-    </div>
+      <p>
+        Whether you are looking for a relaxing getaway or an adventurous trip,
+        we make it happen.
+      </p>
+      <p>
+        We set you up with our experienced team that will understand your needs
+        and budget
+        <br />
+        and will book everything for you, including hotels and flights.
+      </p>
+      
+    
+
     <hr class="dotted" />
 
     <!--Services section-->
+    
     <div class="mom">
-      <h2 class="services">Our Services</h2>
+      <h2 class="services">
+        Our Services
+        <p class="help">We help you every step of the way</p>
+      </h2>
 
       <div class="child">
         <div class="planning activity">
@@ -95,6 +116,7 @@
           </div>
         </div>
       </div>
+      <hr class="dotted" />
       <div>
         <video autoplay loop muted plays-inline class="video">
           <source
@@ -104,17 +126,44 @@
         </video>
       </div>
     </div>
+    <!--footer-->
     <footer>
       <div class="footer">
-        <h4>Travel the World</h4>
-        <p>
-          Our goal is to provide an unforgetable experience in some of the most
-          astounding locations in the world.
-        </p>
+        <div class="column1">
+          <h3>Travel the World</h3>
+          <p>
+            Our goal is to provide an unforgetable experience 
+            <br>
+            in some of the
+            most astounding locations in the world.
+          </p>
+          <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Popular Places</a>
+            <a href="#">Reviews</a>
+          </div>
+        </div>
+        <div class="column2">
+          <h3>Newsletter</h3>
+          <form>
+            <input type="email" placeholder="Your email address" required />
+            <button type="Submit">SUBSCRIBE NOW</button>
+          </form>
+        </div>
+        <div class="column3">
+          <h3>Contact</h3>
+          <p>560, GH Road, GR</p>
+          <p>Greece, Athens, GR</p>
+          <div class="socialicons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+          <p></p>
+        </div>
       </div>
-      <div class="social">
-        <p>Find us</p>
-      </div>
+      <div class="empty"></div>
     </footer>
   </body>
 </html>

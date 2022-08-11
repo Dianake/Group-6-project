@@ -5,16 +5,17 @@ hr.dotted {
   border-top: 3px dotted #bbb;
 }
 nav {
+  background: #ddaf8c;
+
   width: 100%;
-  top: 0;
-  right: 0;
   text-align: right;
-  padding: 20px 8%;
+  padding-bottom: 0.2%;
 }
 nav ul li {
   list-style: none;
   display: inline-block;
-  margin-left: 50px;
+  padding: 13px 40px;
+  margin: 10px;
 }
 nav ul li a {
   text-decoration: none;
@@ -28,16 +29,31 @@ nav ul li a {
   object-fit: cover;
 }
 .about-section {
-  text-align: center;
-  background-color: #5d474d;
-  color: white;
-  padding: 50px;
+  text-align: left;
+  background-color: #e2d8d3;
+  padding: 150px;
+  font-size: 20px;
+  font-weight: 300px;
 }
-
+.about-section h1 {
+  font-size: 80px;
+  font-weight: 600;
+  margin: 0%;
+}
+.about-section img {
+  float: right;
+  width: 50%;
+}
 .services {
-  text-align: center;
-
-  text-shadow: 1px 2px 2px #d5e3e2;
+  text-align: left;
+  margin: 90px auto 90px;
+  font-size: 50px;
+  padding-top: 20%;
+}
+.help {
+  font-size: 20px;
+  padding-top: 1%;
+  font-weight: 300px;
 }
 .child {
   align-items: center;
@@ -47,19 +63,18 @@ nav ul li a {
 
 .activity {
   text-align: center;
-  border: 2px solid #008075;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 15px;
+  margin: 20px;
+  padding-top: 5%;
   width: 100%;
-  max-width: 100%;
+  max-width: 50%;
   flex-grow: 1;
 }
 .activity img {
   max-width: 100%;
   object-fit: cover;
-  height: 200px;
+  height: 300px;
   width: 100%;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 800px) {
@@ -72,10 +87,59 @@ nav ul li a {
 }
 .footer {
   padding: 20px;
-  background-color: #999191;
+  background-color: #ddaf8c;
+  padding: 80px 5%;
+  display: flex;
 }
-.social {
-  padding: 5px;
+
+.column2 {
+  flex-grow: 1;
+  padding-left: 200px;
+}
+.column2 h3 {
+  text-align: left;
+  padding-left: 200px;
+}
+.footer div h3 {
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.column1 p {
+  font-size: 20px;
+}
+
+.column1 a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+form input {
+  width: 300px;
+  height: 45px;
+  border-radius: 4px;
+  margin-top: 20px;
+  border: none;
+  font-size: 20px;
+}
+form button {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.socialicons {
+  margin-top: 30px;
+}
+.socialicons i {
+  font-size: 22px;
+  margin: 10px;
+}
+.empty {
+  padding: 50px;
   background-color: white;
   padding-left: 300px;
 }
