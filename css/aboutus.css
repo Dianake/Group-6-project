@@ -1,58 +1,228 @@
-body {
-  font-family: "Lato", serif;
+* {
+  font-family: "Montserrat", sans-serif;
 }
 hr.dotted {
   border-top: 3px dotted #bbb;
 }
-.about-section {
-  text-align: center;
-  background-color: #5d474d;
-  color: white;
-  padding: 50px;
+.logo {
+  font-size: 60px;
+  padding-right: 90%;
+}
+nav {
+  background: #ddaf8c;
+
+  width: 100%;
+  text-align: right;
+  padding-bottom: 0.2%;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 40px;
+  margin-left: 10px;
+  margin-right: 120px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-weight: 500px;
+}
+nav ul li a:hover {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+.video {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
 }
 
-.services {
-  text-align: center;
+.about-section {
+  text-align: left;
+  background-color: #e2d8d3;
+  padding: 50px;
+  font-size: 20px;
+  font-weight: 300px;
+}
+@media screen and (max-width: 800px) {
+  .about-section {
+    padding: 8%;
+  }
+}
+.about-section h1 {
+  font-size: 70px;
+  font-weight: 600;
+  margin-bottom: 5%;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  text-shadow: 1px 2px 2px #d5e3e2;
+.imagestack:first-of-type {
+  display: grid;
+}
+
+.imagestack p {
+  text-align: center;
+  padding: 10px;
+  border: solid black;
+  width: 5px;
+  font-weight: 800;
+  margin-left: 85%;
+  bottom: 20px;
+}
+
+.imagest img {
+  height: 600px;
+  width: 50%;
+  float: right;
+  border-radius: 8px;
+}
+@media screen and (max-width: 800px) {
+  .imagest img {
+    display: block;
+    height: auto;
+  }
+}
+
+.imagest {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 3;
+}
+.imagest:last-of-type {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 3;
+}
+
+@media screen and (max-width: 800px) {
+  .about-section img {
+    display: block;
+    width: 100%;
+  }
+}
+.services {
+  text-align: left;
+  margin: 90px auto 90px;
+  font-size: 50px;
+  padding-top: 5%;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.help {
+  font-size: 20px;
+  padding-top: 1%;
+  font-weight: 300px;
+  color: black;
 }
 .child {
   align-items: center;
   display: flex;
   align-items: flex-start;
 }
-
-.activity {
-  text-align: center;
-  border: 2px solid #008075;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 15px;
-  width: 100%;
-  max-width: 100%;
-  flex-grow: 1;
-}
-.activity img {
-  max-width: 100%;
-  object-fit: cover;
-  height: 200px;
-  width: 100%;
-}
-
 @media screen and (max-width: 800px) {
   .child {
     display: block;
   }
 }
+.activity {
+  text-align: center;
+  margin: 20px;
+  padding-top: 5%;
+  width: 100%;
+  max-width: 50%;
+  flex-grow: 1;
+}
+@media screen and (max-width: 800px) {
+  .activity {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+.activity img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 200px;
+  width: 50%;
+  border-radius: 10px;
+}
+
 .btn:hover {
-  box-shadow: #bbb 12px 16px 0;
+  box-shadow: rgb(202, 134, 110) 12px 16px 0;
 }
 .footer {
   padding: 20px;
-  background-color: #999191;
+  background-color: #ddaf8c;
+  padding: 80px 5%;
+  display: flex;
 }
-.social {
-  padding: 5px;
+@media screen and (max-width: 800px) {
+  .footer {
+    display: block;
+  }
+}
+.column2 {
+  flex-grow: 1;
+}
+.column2 h3 {
+  text-align: left;
+}
+
+.footer div h3 {
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.column1 p {
+  font-size: 20px;
+  max-width: 500px;
+  padding-right: 200px;
+}
+
+.column1 a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.column1 a:hover {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+form input {
+  width: 300px;
+  height: 45px;
+  border-radius: 4px;
+  margin-top: 20px;
+  border: none;
+  font-size: 20px;
+}
+form button {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+form button:hover {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+.socialicons {
+  margin-top: 30px;
+}
+.socialicons i {
+  font-size: 32px;
+  margin: 10px;
+}
+.empty {
+  padding: 50px;
   background-color: white;
   padding-left: 300px;
 }
