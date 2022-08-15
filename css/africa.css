@@ -48,8 +48,9 @@ nav {
     display: none;
   }
 }
+
 @media screen and (max-width: 800px) {
-  input[type="checkbox"]:checked ~ .nav_menu li {
+  input[type="checkbox"]:checked ~ .nav_menu {
     display: block;
   }
 }
