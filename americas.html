@@ -1,33 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Connection to CSS sheet -->
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Americas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <link rel="stylesheet" href="./css/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/3210cf72d8.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <title>The Americas</title>
-    <p<>
-</head>
-<body>
-    <h1>
-       Welcome to The Americas
-    </h1>
-    <p>Visit North, South, and Latin America's vibrant cities and their wild outdoors</p>
-    <h2>Where will you go?</h2>
-    <p>From the colourful prism of Peru's Rainbow Mountain to the quiet beauty of Mexico’s cenotes, this continent offers something for every type of traveler.</p>
-    <img src"/Group-6-project/Images/peru.jpg" alt="Macchu Picchu">
-    <img src="https://images.app.goo.gl/uWdBW1ucefnsifg79" alt="Sea Lion on the Galapagos">
-    <img src="" alt="México's beach">
-    <img src="" alt="New York skyline">
-    <img src="" alt="Lake and mountains">
-    <img src="" alt="People dancing on the street">
-    <h2>Must do experiences</h2>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="fa-solid fa-water"></i>
+      </div>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">DESTINATIONS</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <div class="row1">
+      <div class="column1">
+        <h2>Americas</h2>
+        <p>
+          From the colourful prism of Peru's Rainbow Mountain to the quiet beauty of Mexico’s cenotes, this continent offers something for every type of traveler.
+        </p>
+
+        <div class="booking-form-box">
+          <div class="radio-btn">
+            <input
+              type="radio"
+              class="btn"
+              name="check"
+              checked="checked"
+            /><span>RoundTrip</span>
+            <input type="radio" class="btn" name="check" /><span>One Way</span>
+            <input type="radio" class="btn" name="check" /><span>Multi</span>
+          </div>
+          <div class="booking-form">
+            <label>Travel From</label>
+            <input type="text" class="form-control" placegolder="City" />
+            <label>Travel To</label>
+            <input type="text" class="form-control" placegolder="City" />
+            <div class="input-grp">
+              <label>Departing</label>
+              <input type="date" class="form-control select-date" />
+            </div>
+            <div class="input-grp">
+              <label>Returning</label>
+              <input type="date" class="form-control select-date" />
+            </div>
+            <div class="input-grp">
+              <label>Adults</label>
+              <input type="number" class="form-control" value="1" />
+            </div>
+            <div class="input-grp">
+              <label>Children</label>
+              <input type="number" class="form-control" value="0" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="children explore">Explore places</h1>
+    <div class="row">
+      <div class="col-6 col-sm-3">
+        <img src="./Images/peru.jpg" class="card-img" />
+        <p>Macchu Picchu, Peru</p>
+      </div>
+      <div class="col-6 col-sm-3">
+        <img src="./Images/colombia.jpg" class="card-img" />
+        <p>Barranquilla, Colombia</p>
+      </div>
+
+      <!--break-line-for-cards>-->
+      <div class="w-100"></div>
+
+      <div class="col-6 col-sm-3">
+        <img src="./Images/canada.jpg" class="card-img" />
+        <p>Alberta, Canada</p>
+      </div>
+      <div class="col-6 col-sm-3">
+        <img src="./Images/usa.jpg" class="card-img" />
+        <p>New York, USA</p>
+      </div>
+    </div>
+
+    <h1 class="children activities">Activities</h1>
+
+    <div class="container1">
+      <div class="card">
+        <img src="./Images/chichen.jpg" />
+        <h4 class="title">Pyramid of Chichén-Itzá, México</h4>
+        <div class="bar">
+          <div class="emptybar"></div>
+          <div class="filledbar"></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/galapagos.jpg" />
+        <h4 class="title">Galápagos Islands, Ecuador</h4>
+        <div class="bar">
+          <div class="emptybar"></div>
+          <div class="filledbar"></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./Images/glacier.jpg" />
+        <h4 class="title">Perito Moreno glacier, Argentina</h4>
+        <div class="bar">
+          <div class="emptybar"></div>
+          <div class="filledbar"></div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/madeira.jpg" />
+        <h4 class="title">Iguazu Falls, Brazil</h4>
+        <div class="bar">
+          <div class="emptybar"></div>
+          <div class="filledbar"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
