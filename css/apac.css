@@ -1,0 +1,228 @@
+* {
+    font-family: "Montserrat", sans-serif;
+  }
+  hr.dotted {
+    border-top: 3px dotted #bbb;
+  }
+  .logo {
+    font-size: 60px;
+    padding-right: 90%;
+  }
+  nav {
+    background: #ddaf8c;
+  
+    width: 100%;
+    text-align: right;
+    padding-bottom: 0.2%;
+  }
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 500px;
+    margin-right: 200px;
+  }
+  nav ul li a:hover {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+  .column1 {
+    background-color: #eee;
+    height: 550px;
+  }
+  @media screen and (max-width: 800px) {
+    .column1 p {
+      font-size: 30px;
+      width: 400px;
+    }
+  }
+  .children {
+    margin-left: 100px;
+    padding-bottom: 20px;
+    padding-top: 5%;
+  }
+  
+  .column1 .booking-form-box {
+    max-width: 350px;
+    border: 1px solid #ce9366;
+    margin-left: 1350px;
+    margin-top: -12%;
+  }
+  .radio-btn {
+    margin: 0 20px;
+  }
+  .radio-btn .btn {
+    margin: 20px 10px 20px 0;
+    box-shadow: none;
+  }
+  .radio-btn .btn::after {
+    content: " ";
+    height: 15px;
+    width: 15px;
+    top: -2px;
+    left: -1px;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    border: 3px solid #c08761;
+    visibility: visible;
+    border-radius: 50%;
+  }
+  
+  .radio-btn .btn:checked::after {
+    content: " ";
+    background-color: black;
+    transition: o.5s;
+  }
+  .radio-btn span {
+    color: black;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .booking-form-box {
+      max-width: 100%;
+      position: absolute;
+      margin-left: 0%;
+    }
+  }
+  .row1 h2 {
+    margin-top: 0%;
+    font-size: 100px;
+    margin-left: 100px;
+    margin-right: 50%;
+  }
+  .row1 p {
+    margin-left: 100px;
+    margin-right: 50%;
+    font-size: 20px;
+  }
+  
+  .row1 h1 {
+    padding-left: 100px;
+    padding-top: 60px;
+    margin-bottom: 30px;
+  }
+  
+  .row {
+    padding-left: 100px;
+  }
+  .card-img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 300px;
+    width: 70%;
+    border-radius: 10px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    card-img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+  
+  .container1 {
+    height: 300px;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: flex;
+    margin-left: 100px;
+  }
+  
+  .card {
+    height: 380px;
+    width: 400px;
+    background-color: #070212;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #eee;
+    transition: 0.4s ease-out;
+    position: left;
+    left: 0px;
+    right: 0px;
+  }
+  
+  .card:not(:first-child) {
+    margin-left: -50px;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  
+  .title {
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+  
+  .bar {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 5px;
+    width: 150px;
+  }
+  
+  .emptybar {
+    background-color: #ddaf8c;
+    width: 150%;
+    height: 100%;
+  }
+  
+  .filledbar {
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0, 154, 217);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 154, 217, 1) 0%,
+      rgba(217, 147, 0, 1) 65%,
+      rgba(255, 186, 0, 1) 100%
+    );
+    transition: 0.6s ease-out;
+  }
+  
+  .card:hover .filledbar {
+    width: 120px;
+    transition: 0.4s ease-out;
+  }
+  
+  .stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+  }
+  
+  svg {
+    fill: #09060f;
+  
+    stroke-width: 10px;
+  }
+  
+  .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }
+  .card img {
+    object-fit: cover;
+    height: 100%;
+  }
