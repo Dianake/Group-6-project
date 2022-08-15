@@ -4,40 +4,87 @@
 hr.dotted {
   border-top: 3px dotted #bbb;
 }
-.logo {
-  font-size: 60px;
-  padding-right: 90%;
-}
+
 nav {
   background: #ddaf8c;
-
   width: 100%;
   text-align: right;
   padding-bottom: 0.2%;
+  cursor: pointer;
 }
-nav ul li {
+
+.nav__toggle {
+  color: white;
+  font-size: 50px;
+}
+.nav_menu {
   list-style: none;
-  display: inline-block;
+  display: flex;
+  margin-left: 70px;
 }
-nav ul li a {
+.nav_menu a {
   text-decoration: none;
   color: black;
   font-size: 17px;
   font-weight: 500px;
-  margin-right: 200px;
+  padding: 1rem;
+  padding-right: 4rem;
 }
-nav ul li a:hover {
+.nav_menu a:hover {
   -webkit-text-stroke: 1px white;
   color: transparent;
 }
+.nav__checkbox {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .nav_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 1 rem;
+    font-size: 1.2rem;
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  input[type="checkbox"]:checked ~ .nav_menu li {
+    display: block;
+  }
+}
+
+.close {
+  display: none;
+}
+.menu {
+  margin-top: 0.2rem;
+  margin-right: 3rem;
+}
+
 .column1 {
   background-color: #eee;
   height: 550px;
 }
 @media screen and (max-width: 800px) {
+  .column1 {
+    height: 70rem;
+  }
+}
+.column1 h2 {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 800px) {
   .column1 p {
-    font-size: 30px;
-    width: 400px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .column1 h2 {
+    text-align: left;
+    width: 300px;
   }
 }
 .children {
@@ -49,8 +96,15 @@ nav ul li a:hover {
 .column1 .booking-form-box {
   max-width: 350px;
   border: 1px solid #ce9366;
-  margin-left: 1350px;
-  margin-top: -12%;
+  margin-left: 1100px;
+  margin-top: -13%;
+}
+
+@media screen and (max-width: 800px) {
+  .column1 .booking-form-box {
+    margin-left: 100px;
+    margin-top: 4%;
+  }
 }
 .radio-btn {
   margin: 0 20px;
@@ -76,7 +130,7 @@ nav ul li a:hover {
 .radio-btn .btn:checked::after {
   content: " ";
   background-color: black;
-  transition: o.5s;
+  transition: 0.5s;
 }
 .radio-btn span {
   color: black;
@@ -146,6 +200,12 @@ nav ul li a:hover {
   left: 0px;
   right: 0px;
 }
+@media screen and (max-width: 800px) {
+  .card {
+    width: 400px;
+    height: 250px;
+  }
+}
 
 .card:not(:first-child) {
   margin-left: -50px;
@@ -183,6 +243,12 @@ nav ul li a:hover {
   background-color: #ddaf8c;
   width: 150%;
   height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .emptybar {
+    height: 100%;
+    width: 50%;
+  }
 }
 
 .filledbar {

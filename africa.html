@@ -43,9 +43,13 @@
   <body>
     <nav>
       <div class="logo">
-        <i class="fa-solid fa-water"></i>
+        <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
+        <label for="nav__checkbox" class="nav__toggle">
+          <div class="menu"><i class="fa-solid fa-water"></i></div>
+          <div class="close"><i class="fa-solid fa-xmark"></i></div>
+        </label>
       </div>
-      <ul>
+      <ul class="nav_menu">
         <li><a href="#">HOME</a></li>
         <li><a href="#">DESTINATIONS</a></li>
         <li><a href="#">GALLERY</a></li>
