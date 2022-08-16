@@ -37,23 +37,6 @@ nav {
 .nav__checkbox {
   display: none;
 }
-@media screen and (max-width: 800px) {
-  .nav_menu {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    margin: 1 rem;
-    font-size: 1.2rem;
-    display: none;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  input[type="checkbox"]:checked ~ .nav_menu {
-    display: block;
-  }
-}
 
 .close {
   display: none;
@@ -67,27 +50,13 @@ nav {
   background-color: #eee;
   height: 550px;
 }
-@media screen and (max-width: 800px) {
-  .column1 {
-    height: 70rem;
-  }
-}
+
 .column1 h2 {
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: 800px) {
-  .column1 p {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .column1 h2 {
-    text-align: left;
-    width: 300px;
-  }
-}
+
 .children {
   margin-left: 100px;
   padding-bottom: 20px;
@@ -101,12 +70,6 @@ nav {
   margin-top: -13%;
 }
 
-@media screen and (max-width: 800px) {
-  .column1 .booking-form-box {
-    margin-left: 100px;
-    margin-top: 4%;
-  }
-}
 .radio-btn {
   margin: 0 20px;
 }
@@ -139,13 +102,6 @@ nav {
   font-size: 15px;
 }
 
-@media screen and (max-width: 800px) {
-  .booking-form-box {
-    max-width: 100%;
-    position: absolute;
-    margin-left: 0%;
-  }
-}
 .row1 h2 {
   margin-top: 0%;
   font-size: 100px;
@@ -175,13 +131,6 @@ nav {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 800px) {
-  card-img {
-    max-width: 100%;
-    display: block;
-  }
-}
-
 .container1 {
   height: 300px;
   top: 60px;
@@ -200,12 +149,6 @@ nav {
   position: left;
   left: 0px;
   right: 0px;
-}
-@media screen and (max-width: 800px) {
-  .card {
-    width: 400px;
-    height: 250px;
-  }
 }
 
 .card:not(:first-child) {
@@ -244,12 +187,6 @@ nav {
   background-color: #ddaf8c;
   width: 150%;
   height: 100%;
-}
-@media screen and (max-width: 800px) {
-  .emptybar {
-    height: 100%;
-    width: 50%;
-  }
 }
 
 .filledbar {
@@ -292,4 +229,124 @@ svg {
 .card img {
   object-fit: cover;
   height: 100%;
+}
+.footer {
+  padding: 20px;
+  background-color: #ddaf8c;
+  padding: 80px 5%;
+  display: flex;
+  margin-top: 100px;
+}
+.column2 {
+  flex-grow: 1;
+}
+.column2 h3 {
+  text-align: left;
+}
+
+.footer div h3 {
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.columnn1 p {
+  font-size: 20px;
+  max-width: 600px;
+  padding-right: 200px;
+}
+
+.columnn1 a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.columnn1 a:hover {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+form input {
+  width: 300px;
+  height: 45px;
+  border-radius: 4px;
+  margin-top: 20px;
+  border: none;
+  font-size: 20px;
+}
+form button {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+form button:hover {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+.socialicons {
+  margin-top: 30px;
+}
+.socialicons i {
+  font-size: 32px;
+  margin: 10px;
+}
+.empty {
+  padding: 50px;
+  background-color: white;
+  padding-left: 300px;
+}
+
+@media screen and (max-width: 800px) {
+  .nav_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    margin: 1 rem;
+    font-size: 1.2rem;
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ .nav_menu {
+    display: block;
+  }
+  .emptybar {
+    height: 100%;
+    width: 50%;
+  }
+  .column1 {
+    height: 70rem;
+  }
+  .column1 h2 {
+    text-align: left;
+    width: 300px;
+  }
+  .column1 p {
+    width: 300px;
+  }
+  .booking-form-box {
+    max-width: 100%;
+    position: absolute;
+    margin-left: 0%;
+  }
+  .column1 .booking-form-box {
+    margin-left: 100px;
+    margin-top: 4%;
+  }
+  .card {
+    width: 400px;
+    height: 250px;
+  }
+  card-img {
+    max-width: 100%;
+    display: block;
+  }
+  .footer {
+    display: block;
+  }
 }

@@ -4,16 +4,23 @@
 hr.dotted {
   border-top: 3px dotted #bbb;
 }
-.logo {
-  font-size: 60px;
-  padding-right: 90%;
-}
+
 nav {
   background: #ddaf8c;
-
   width: 100%;
   text-align: right;
   padding-bottom: 0.2%;
+  cursor: pointer;
+}
+.nav__toggle {
+  color: white;
+  font-size: 50px;
+}
+.nav_menu {
+  list-style: none;
+  display: flex;
+  margin-left: 70px;
+  display: none;
 }
 nav ul li {
   list-style: none;
@@ -32,6 +39,9 @@ nav ul li a:hover {
   -webkit-text-stroke: 1px white;
   color: transparent;
 }
+.nav__checkbox {
+  display: none;
+}
 .video {
   width: 100%;
   height: 50vh;
@@ -45,11 +55,7 @@ nav ul li a:hover {
   font-size: 20px;
   font-weight: 300px;
 }
-@media screen and (max-width: 800px) {
-  .about-section {
-    padding: 8%;
-  }
-}
+
 .about-section h1 {
   font-size: 70px;
   font-weight: 600;
@@ -79,12 +85,6 @@ nav ul li a:hover {
   float: right;
   border-radius: 8px;
 }
-@media screen and (max-width: 800px) {
-  .imagest img {
-    display: block;
-    height: auto;
-  }
-}
 
 .imagest {
   grid-column: 2 / span 2;
@@ -95,12 +95,6 @@ nav ul li a:hover {
   grid-row: 2 / span 3;
 }
 
-@media screen and (max-width: 800px) {
-  .about-section img {
-    display: block;
-    width: 100%;
-  }
-}
 .services {
   text-align: left;
   margin: 90px auto 90px;
@@ -122,11 +116,7 @@ nav ul li a:hover {
   display: flex;
   align-items: flex-start;
 }
-@media screen and (max-width: 800px) {
-  .child {
-    display: block;
-  }
-}
+
 .activity {
   text-align: center;
   margin: 20px;
@@ -135,12 +125,7 @@ nav ul li a:hover {
   max-width: 50%;
   flex-grow: 1;
 }
-@media screen and (max-width: 800px) {
-  .activity {
-    max-width: 100%;
-    text-align: left;
-  }
-}
+
 .activity img {
   max-width: 100%;
   object-fit: cover;
@@ -158,11 +143,7 @@ nav ul li a:hover {
   padding: 80px 5%;
   display: flex;
 }
-@media screen and (max-width: 800px) {
-  .footer {
-    display: block;
-  }
-}
+
 .column2 {
   flex-grow: 1;
 }
@@ -225,4 +206,42 @@ form button:hover {
   padding: 50px;
   background-color: white;
   padding-left: 300px;
+}
+@media screen and (max-width: 800px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    margin: 1 rem;
+    font-size: 1.2rem;
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ .nav_menu {
+    display: block;
+  }
+
+  .about-section {
+    padding: 8%;
+  }
+
+  .about-section img {
+    display: block;
+    width: 100%;
+  }
+  .imagest img {
+    display: block;
+    height: auto;
+  }
+  .child {
+    display: block;
+  }
+  .activity {
+    max-width: 100%;
+    text-align: left;
+  }
+  .footer {
+    display: block;
+  }
 }
