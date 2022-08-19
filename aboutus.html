@@ -5,18 +5,28 @@
     <meta charset="UTF-8" />
     <title>Travel The World</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
     <link rel="stylesheet" href="./css/aboutus.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
+    />
+    <!--for the services table-->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+    <script src="./js/aboutus.js"></script>
     <script
       src="https://kit.fontawesome.com/3210cf72d8.js"
       crossorigin="anonymous"
@@ -42,49 +52,165 @@
   <body>
     <!--navbar-->
     <div class="main">
-      
       <nav>
         <div class="logo">
           <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
           <label for="nav__checkbox" class="nav__toggle">
             <i class="fa-solid fa-water menu"></i>
           </label>
-        <ul class="nav_menu">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">DESTINATIONS</a></li>
-          <li><a href="#">GALLERY</a></li>
-          <li><a href="#">CONTACT US</a></li>
-        </ul>
+          <ul class="nav_menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">DESTINATIONS</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">CONTACT US</a></li>
+          </ul>
         </div>
       </nav>
     </div>
     <!--About us section-->
     <div class="about-section">
       <div class="imagestack">
-      <div  class="imagest">
-        <img src="./pictures/maldives.jpeg" >
-      <p>Maldives</p></div>
-      <div class="imagest">
-        <img src="./pictures/bali11.png">
-      <p>Bali</p></div>
-
+        <div class="imagest">
+          <img src="./pictures/maldives.jpeg" />
+          <p>Maldives</p>
+        </div>
+        <div class="imagest">
+          <img src="./pictures/bali11.png" />
+          <p>Bali</p>
+        </div>
+      </div>
     </div>
-      <h1>About us</h1>
-      <p>
-        Whether you are looking for a relaxing getaway or an adventurous trip,
-        we make it happen.
+    <h1 class="services">About us</h1>
+    <p>
+      Whether you are looking for a relaxing getaway or an adventurous trip, we
+      make it happen.
+    </p>
+    <p>
+      We set you up with our experienced team that will understand your needs
+      and budget and will book everything for you, including hotels and flights.
+    </p>
+
+    <div class="container0">
+      <h1>Popular Destinations</h1>
+      <!--Japan-->
+      <button
+        onclick="buttononClick()"
+        class="f5 link dim br3 ph4 pv3 mb2 dib white bg-mid-gray"
+      >
+        Japan
+      </button>
+
+      <article
+        id="card"
+        class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10"
+        style="display: none"
+      >
+        <div class="tc">
+          <img
+            src="./pictures/Japan.jpeg"
+            class="br-200 h5 w5 dib"
+            title="japan-view"
+          />
+          <h1 class="f4">Japan</h1>
+          <hr class="mw3 bb bw1 b--black-10" />
+        </div>
+        <p class="lh-copy measure center f6 black-70">
+          An opportunity for tourists to follow one of the most popular trails
+          in Japan in Fujinomiya!
+        </p>
+      </article>
+<!--Tanzania-->
+      <button
+      onclick="buttononClick1()"
+      class="f5 link dim br3 ph4 pv3 mb2 dib white bg-mid-gray"
+    >
+      Tanzania
+    </button>
+
+    <article
+      id="card1"
+      class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10"
+      style="display: none"
+    >
+      <div class="tc">
+        <img
+          src="./pictures/tanzania.jpeg"
+          class="br-500 h8 w8 dib"
+          title="tanzania-view"
+        />
+        <h1 class="f4">Tanzania</h1>
+        <hr class="mw3 bb bw1 b--black-10" />
+      </div>
+      <p class="lh-copy measure center f6 black-70">
+       In the national park of Tarangrite you will be able to see up close a number of wild animals and and breathtaking views.
       </p>
-      <p>
-        We set you up with our experienced team that will understand your needs
-        and budget and will book everything for you, including hotels and flights.
-      </p>
+    </article>
+
+
+<!--America-->
+    <button
+    onclick="buttononClick2()"
+    class="f5 link dim br3 ph4 pv3 mb2 dib white bg-mid-gray"
+  >
+    America
+  </button>
+
+  <article
+    id="card2"
+    class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10"
+    style="display: none"
+  >
+    <div class="tc">
+      <img
+        src="./pictures/NY.jpeg"
+        class="br-500 h8 w8 dib"
+        title="tanzania-view"
+      />
+      <h1 class="f4">New York</h1>
+      <hr class="mw3 bb bw1 b--black-10" />
+    </div>
+    <p class="lh-copy measure center f6 black-70">
+     There is no limit for the tourist attractions here: the Empire State Building, Statue of Liberty and all the flea markets around!
+    </p>
+  </article>
+
+  <!--Europe-->
+
+  <button
+  onclick="buttononClick3()"
+  class="f5 link dim br3 ph4 pv3 mb2 dib white bg-mid-gray"
+>
+  Europe
+</button>
+
+<article
+  id="card3"
+  class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10"
+  style="display: none"
+>
+  <div class="tc">
+    <img
+      src="./pictures/italy.jpeg"
+      class="br-500 h8 w8 dib"
+      title="tanzania-view"
+    />
+    <h1 class="f4">Italy</h1>
+    <hr class="mw3 bb bw1 b--black-10" />
+  </div>
+  <p class="lh-copy measure center f6 black-70">
+   There is no limit for the tourist attractions here: the Empire State Building, Statue of Liberty and all the flea markets around!
+  </p>
+</article>
+
+
       
-    
+        
+       
 
     <hr class="dotted" />
 
     <!--Services section-->
-    
+
     <div class="mom">
       <h2 class="services">
         Our Services
@@ -143,10 +269,9 @@
         <div class="column1">
           <h3>Travel the World</h3>
           <p>
-            Our goal is to provide an unforgetable experience 
-            <br>
-            in some of the
-            most astounding locations in the world.
+            Our goal is to provide an unforgetable experience
+            <br />
+            in some of the most astounding locations in the world.
           </p>
           <div class="links">
             <a href="#">Home</a>
@@ -155,12 +280,17 @@
             <a href="#">Reviews</a>
           </div>
         </div>
-        <div class="column2">
+        <div class="container">
           <h3>Newsletter</h3>
-          <form>
-            <input type="email" placeholder="Your email address" required />
-            <button type="Submit">SUBSCRIBE NOW</button>
-          </form>
+          <div class="newsletter">
+            <input type="email" placeholder="Your email address" />
+            <button onclick="revealMessage()" class="newsletter-btn">
+              SUBSCRIBE NOW🔔
+            </button>
+            <p id="hiddenMessage" style="display: none">
+              You get 10% off in your first booking!🔥
+            </p>
+          </div>
         </div>
         <div class="column3">
           <h3>Contact</h3>
@@ -174,7 +304,6 @@
           <p></p>
         </div>
       </div>
-      <div class="empty"></div>
     </footer>
   </body>
 </html>

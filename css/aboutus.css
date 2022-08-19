@@ -20,7 +20,6 @@ nav {
   list-style: none;
   display: flex;
   margin-left: 70px;
-  display: none;
 }
 nav ul li {
   list-style: none;
@@ -144,10 +143,10 @@ nav ul li a:hover {
   display: flex;
 }
 
-.column2 {
+.container {
   flex-grow: 1;
 }
-.column2 h3 {
+.container h3 {
   text-align: left;
 }
 
@@ -176,7 +175,7 @@ nav ul li a:hover {
   -webkit-text-stroke: 1px white;
   color: transparent;
 }
-form input {
+.newsletter input {
   width: 300px;
   height: 45px;
   border-radius: 4px;
@@ -184,14 +183,14 @@ form input {
   border: none;
   font-size: 20px;
 }
-form button {
-  background: transparent;
-  border: 2px solid white;
+.newsletter-btn {
+  background: rgb(190, 150, 114);
+
   border-radius: 10px;
   font-size: 20px;
 }
 
-form button:hover {
+.newsletter-btn:hover {
   -webkit-text-stroke: 1px white;
   color: transparent;
 }
@@ -207,7 +206,12 @@ form button:hover {
   background-color: white;
   padding-left: 300px;
 }
-@media screen and (max-width: 800px) {
+#hiddenMessage {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+@media only screen and (min-width: 360px) and (max-width: 740px) {
   nav ul {
     display: flex;
     flex-direction: column;
@@ -222,6 +226,14 @@ form button:hover {
     display: block;
   }
 
+  .imagestack p {
+    border: none;
+    margin-left: 10%;
+  }
+  .about-section h1 {
+    font-size: 40px;
+  }
+
   .about-section {
     padding: 8%;
   }
@@ -234,6 +246,9 @@ form button:hover {
     display: block;
     height: auto;
   }
+  .services {
+    font-size: 30px;
+  }
   .child {
     display: block;
   }
@@ -243,5 +258,16 @@ form button:hover {
   }
   .footer {
     display: block;
+  }
+  .column1 p {
+    padding-right: 20px;
+
+    height: 300px;
+  }
+  form input {
+    width: 240px;
+  }
+  #hiddenMessage {
+    font-size: 20px;
   }
 }
