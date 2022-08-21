@@ -48,7 +48,7 @@ nav ul li a:hover {
 }
 
 .about-section {
-  text-align: left;
+  text-align: center;
   background-color: #e2d8d3;
   padding: 50px;
   font-size: 20px;
@@ -56,6 +56,7 @@ nav ul li a:hover {
 }
 
 .about-section h1 {
+  text-align: center;
   font-size: 70px;
   font-weight: 600;
   margin-bottom: 5%;
@@ -63,7 +64,9 @@ nav ul li a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.servicep {
+  text-align: center;
+}
 .imagestack:first-of-type {
   display: grid;
 }
@@ -94,8 +97,118 @@ nav ul li a:hover {
   grid-row: 2 / span 3;
 }
 
-.services {
+/* Popular Destinations from appcode.app */
+.category-name {
+  text-align: center;
+}
+
+.popularcards li {
+  list-style: none;
+  display: inline-block;
+}
+.popularcards {
+  text-align: center;
+}
+.img-card {
+  width: 300px;
+  position: relative;
+  border-radius: 5px;
   text-align: left;
+
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.img-card .card-image {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 5px 5px 0px 0px;
+  height: 300px;
+}
+
+.img-card .card-image img {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+  height: 250px;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.img-card .card-image:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.img-card .card-text {
+  padding: 0 15px 15px;
+  line-height: 1.5;
+}
+
+.img-card .card-link {
+  padding: 20px 15px 30px;
+  width: -webkit-fill-available;
+}
+
+.img-card .card-link a {
+  text-decoration: none;
+  position: relative;
+  padding: 10px 0;
+}
+
+.img-card .card-link a:after {
+  top: 30px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  width: 0;
+
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  -moz-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.img-card .card-link a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.img-card.iCard-style1 .card-title {
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgb(0 0 0 / 50%);
+}
+
+.img-card.iCard-style1 .card-text {
+  color: #795548;
+}
+
+.img-card.iCard-style1 .card-link a {
+  color: #ff9800;
+}
+
+.img-card.iCard-style1 .card-link a:after {
+  background: #ff9800;
+}
+
+/* End of Popular Destinations */
+
+.services {
+  text-align: center;
   margin: 90px auto 90px;
   font-size: 50px;
   padding-top: 1%;
@@ -158,8 +271,8 @@ nav ul li a:hover {
 
 .column1 p {
   font-size: 20px;
-  max-width: 500px;
-  padding-right: 200px;
+  max-width: 600px;
+  padding-right: 120px;
 }
 
 .column1 a {
@@ -199,13 +312,9 @@ nav ul li a:hover {
 }
 .socialicons i {
   font-size: 32px;
-  margin: 10px;
+  margin: 3px;
 }
-.empty {
-  padding: 50px;
-  background-color: white;
-  padding-left: 300px;
-}
+
 #hiddenMessage {
   color: white;
   font-size: 30px;

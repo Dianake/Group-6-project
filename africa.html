@@ -19,6 +19,7 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+    <script src="./js/aboutus.js"></script>
     <script
       src="https://kit.fontawesome.com/3210cf72d8.js"
       crossorigin="anonymous"
@@ -66,7 +67,7 @@
           dancing to African reggae in the streets of Malawi are just a few of
           the activities waiting for you to enjoy!
         </p>
-
+        <!--booking form-->
         <div class="booking-form-box">
           <div class="radio-btn">
             <input
@@ -99,12 +100,14 @@
               <label>Children</label>
               <input type="number" class="form-control" value="0" />
             </div>
+            <button class="btn"><a href="#">Book now</a></button>
           </div>
         </div>
+        <!--end of booking form-->
       </div>
-    </div>
 
-    <h1 class="children explore">Explore places</h1>
+      <h1>Explore places</h1>
+    </div>
     <div class="row">
       <div class="col-6 col-sm-3">
         <img src="./pictures/Wadi-Musa-Jordan.jpeg" class="card-img" />
@@ -182,10 +185,14 @@
         </div>
         <div class="column2">
           <h3>Newsletter</h3>
-          <form>
-            <input type="email" placeholder="Your email address" required />
-            <button type="Submit">SUBSCRIBE NOW</button>
-          </form>
+
+          <input type="email" placeholder="Your email address" required />
+          <button onclick="revealMessage()" class="newsletter-btn">
+            SUBSCRIBE NOW 🔔
+          </button>
+          <p id="hiddenMessage" style="display: none">
+            You get 10% off in your first booking!🔥
+          </p>
         </div>
         <div class="column3">
           <h3>Contact</h3>
@@ -195,6 +202,8 @@
             <i class="fab fa-facebook"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-github"></i>
           </div>
           <p></p>
         </div>
