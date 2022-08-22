@@ -102,6 +102,15 @@ nav {
   font-size: 15px;
 }
 
+.booking-form .btn a {
+  background-color: #ce9366;
+  margin-top: 10px;
+  margin-left: 100px;
+  color: black;
+  padding: 0.4rem;
+  padding-right: 1rem;
+}
+
 .row1 h2 {
   margin-top: 0%;
   font-size: 100px;
@@ -115,9 +124,9 @@ nav {
 }
 
 .row1 h1 {
-  padding-left: 100px;
   padding-top: 60px;
   margin-bottom: 30px;
+  margin-left: 100px;
 }
 
 .row {
@@ -269,25 +278,14 @@ svg {
   -webkit-text-stroke: 1px white;
   color: transparent;
 }
-form input {
-  width: 300px;
-  height: 45px;
-  border-radius: 4px;
-  margin-top: 20px;
-  border: none;
-  font-size: 20px;
-}
-form button {
+
+.newsletter-btn {
   background: transparent;
   border: 2px solid white;
   border-radius: 10px;
   font-size: 20px;
 }
 
-form button:hover {
-  -webkit-text-stroke: 1px white;
-  color: transparent;
-}
 .socialicons {
   margin-top: 30px;
 }
@@ -301,13 +299,39 @@ form button:hover {
   padding-left: 300px;
 }
 
+.newsletter input {
+  width: 300px;
+  height: 45px;
+  border-radius: 4px;
+  margin-top: 20px;
+  border: none;
+  font-size: 20px;
+}
+.newsletter-btn {
+  background: rgb(190, 150, 114);
+
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.newsletter-btn:hover {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
+#hiddenMessage {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 800px) {
   .nav_menu {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     text-align: center;
-    margin: 1 rem;
+    margin: 2rem;
     font-size: 1.2rem;
     display: none;
   }
@@ -319,34 +343,52 @@ form button:hover {
     height: 100%;
     width: 50%;
   }
+
   .column1 {
     height: 70rem;
   }
   .column1 h2 {
+    font-size: 50px;
+    margin-left: 7%;
     text-align: left;
     width: 300px;
   }
   .column1 p {
-    width: 300px;
+    width: 250px;
+    margin-left: 7%;
   }
+  .columnn1 a:hover {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+
   .booking-form-box {
     max-width: 100%;
     position: absolute;
     margin-left: 0%;
   }
   .column1 .booking-form-box {
-    margin-left: 100px;
+    margin-left: 7%;
     margin-top: 4%;
   }
-  .card {
-    width: 400px;
-    height: 250px;
+  .row1 h1 {
+    margin-left: 7%;
   }
-  card-img {
-    max-width: 100%;
-    display: block;
+
+  .container1 {
+    margin-left: 7%;
+  }
+  .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  .card:hover .stroke {
+    stroke-dashoffset: 200;
+    transition: 0.6s ease-out;
   }
   .footer {
     display: block;
+    margin-left: 7%;
   }
 }
