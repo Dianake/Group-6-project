@@ -28,7 +28,7 @@
       transform: translate(-50%, -50%);
       color: white
     }
-    h2 {
+    h2, h3 {
         text-align: center;
         color: black;
         padding: 10px 0 10px;
@@ -57,8 +57,12 @@
         font-size: 100%;
         vertical-align: baseline;
         font-family: jost, serif;
-
     }
+    article
+{
+    padding:5px;
+    margin:10px;
+}
     hr {
         border-top: 2px solid black;
         width:  95%;
