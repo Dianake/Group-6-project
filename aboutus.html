@@ -51,37 +51,49 @@
 
   <body>
     <!--navbar-->
-    <div class="main">
-      <nav>
-        <div class="logo">
-          <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
-          <label for="nav__checkbox" class="nav__toggle">
-            <i class="fa-solid fa-water menu"></i>
-          </label>
-          <ul class="nav_menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">DESTINATIONS</a></li>
-            <li><a href="#">GALLERY</a></li>
-            <li><a href="#">CONTACT US</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <nav>
+      <div class="logo">
+        <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
+        <label for="nav__checkbox" class="nav__toggle">
+          <i class="fa-solid fa-water menu"></i>
+        </label>
+
+        <ul class="nav_menu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">DESTINATIONS</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <!--About us section-->
-    <div class="about-section">
-      <div class="imagestack">
-        <div class="imagest">
-          <img src="./pictures/maldives.jpeg" />
-          <p>Maldives</p>
-        </div>
-        <div class="imagest">
-          <img src="./pictures/bali11.png" />
-          <p>Bali</p>
-        </div>
-      </div>
+    <div class="about-section" id="aboutus">
+      <button
+        style="
+          border-radius: 6px;
+          display: flex;
+          background-color: rgb(230, 219, 212);
+        "
+      >
+        <select onchange="color(this.value)">
+          <option value='url("img/dubrovnik.jpg") center 35%/ cover'>
+            Dubrovnik ✨
+          </option>
+          <option value='url("img/madeira.jpg") center 37%/cover'>
+            Madeira ✨
+          </option>
+          <option value='url("img/swissalps.jpg") center 6%/cover'>
+            Switzerland ✨
+          </option>
+          <option value='url("img/santorini.jpg") center 44%/cover'>
+            Santorini ✨
+          </option>
+        </select>
+      </button>
     </div>
     <h1 class="services">About us</h1>
+
     <div class="servicep">
       <p>
         Whether you are looking for a relaxing getaway or an adventurous trip,
