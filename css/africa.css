@@ -66,8 +66,8 @@ nav {
 .column1 .booking-form-box {
   max-width: 350px;
   border: 1px solid #ce9366;
-  margin-left: 1100px;
-  margin-top: -13%;
+  margin-left: 1500px;
+  margin-top: -10%;
 }
 
 .radio-btn {
@@ -94,7 +94,6 @@ nav {
 .radio-btn .btn:checked::after {
   content: " ";
   background-color: black;
-  transition: 0.5s;
 }
 .radio-btn span {
   color: black;
@@ -325,7 +324,7 @@ svg {
   font-weight: 600;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 800px) {
   .nav_menu {
     display: flex;
     flex-direction: column;

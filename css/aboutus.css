@@ -21,24 +21,28 @@ nav {
   display: flex;
   margin-left: 70px;
 }
-nav ul li {
+.nav_menu {
   list-style: none;
-  display: inline-block;
-  padding: 10px 40px;
-  margin-left: 10px;
-  margin-right: 120px;
+  display: flex;
+  margin-left: 70px;
 }
-nav ul li a {
+.nav_menu a {
   text-decoration: none;
   color: black;
   font-size: 17px;
   font-weight: 500px;
+  padding: 1rem;
+  padding-right: 4rem;
 }
 nav ul li a:hover {
   -webkit-text-stroke: 1px white;
   color: transparent;
 }
 .nav__checkbox {
+  display: none;
+}
+
+.close {
   display: none;
 }
 .video {
@@ -49,52 +53,13 @@ nav ul li a:hover {
 
 .about-section {
   text-align: center;
-  background-color: #e2d8d3;
+  background-color: #ddaf8c;
   padding: 50px;
-  font-size: 20px;
-  font-weight: 300px;
+  height: 50vh;
 }
 
-.about-section h1 {
-  text-align: center;
-  font-size: 70px;
-  font-weight: 600;
-  margin-bottom: 5%;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .servicep {
   text-align: center;
-}
-.imagestack:first-of-type {
-  display: grid;
-}
-
-.imagestack p {
-  text-align: center;
-  padding: 10px;
-  border: solid black;
-  width: 5px;
-  font-weight: 800;
-  margin-left: 85%;
-  bottom: 20px;
-}
-
-.imagest img {
-  height: 600px;
-  width: 50%;
-  float: right;
-  border-radius: 8px;
-}
-
-.imagest {
-  grid-column: 2 / span 2;
-  grid-row: 1 / span 3;
-}
-.imagest:last-of-type {
-  grid-column: 1 / span 2;
-  grid-row: 2 / span 3;
 }
 
 /* Popular Destinations from appcode.app */
@@ -320,13 +285,13 @@ nav ul li a:hover {
   font-size: 30px;
   font-weight: 600;
 }
-@media only screen and (min-width: 360px) and (max-width: 740px) {
-  nav ul {
+@media only screen and (min-width: 300px) and (max-width: 800px) {
+  .nav_menu {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     text-align: center;
-    margin: 1 rem;
+    margin: 2 rem;
     font-size: 1.2rem;
     display: none;
   }
@@ -335,26 +300,10 @@ nav ul li a:hover {
     display: block;
   }
 
-  .imagestack p {
-    border: none;
-    margin-left: 10%;
-  }
   .about-section h1 {
     font-size: 40px;
   }
 
-  .about-section {
-    padding: 8%;
-  }
-
-  .about-section img {
-    display: block;
-    width: 100%;
-  }
-  .imagest img {
-    display: block;
-    height: auto;
-  }
   .services {
     font-size: 30px;
   }
