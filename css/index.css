@@ -3,17 +3,18 @@
     align-items: left;
 } 
 
-      .form-inline {
-        justify-content: right;
-      }
-
+.navbar-custom {
+  background-color: peachpuff;
+}
+.nav-link {
+  color: black;
+}
       body, html {
         height: 100%;
         background-color: #e5e5f7;
     }
-    
     .hero-image {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./Images/mapunsplash.avif");
+      background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Images/annie-spratt-qyAka7W5uMY-unsplash.jpg");
       height: 80%;
       background-position: center;
       background-repeat: no-repeat;
@@ -47,9 +48,7 @@
       width: 100%;
     }
   }
-   * {
-     box-sizing: border-box;
- }
+   
     html, body, div, img {
         margin: 0;
         padding: 0;
@@ -58,26 +57,28 @@
         vertical-align: baseline;
         font-family: jost, serif;
     }
-    article
-{
-    padding:5px;
-    margin:10px;
-}
     hr {
         border-top: 2px solid black;
         width:  95%;
     }
+    article {
+      padding: 10px 50px 10px 50px; 
+  }
+  .carousel-container {
+    padding: 10px 50px 20px 50px; 
+}
     footer {
-        display: flex; 
-        justify-content: center; 
-        background-color: #ffb6505e;
-        height: 100px;
-        padding: 30px;
-      }
-      footer a {
-        margin: 5px;
-        text-decoration: none!important;
-      }
+      display: flex; 
+      justify-content: center; 
+      background-color: #ffb6505e;
+      height: 100px;
+      padding: 30px;
+    }
+    footer a {
+      margin: 5px;
+      text-decoration: none!important;
+    }
+
       .social-icon {
         display: inline-flex;
         width: 25px;
