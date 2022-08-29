@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 .navbar-toggler{ 	
     align-items: left;
 } 
@@ -29,10 +29,17 @@
       transform: translate(-50%, -50%);
       color: white
     }
-    h2, h3 {
+    h2, h4 {
         text-align: center;
         color: black;
-        padding: 10px 0 10px;
+      }
+      h2 {
+        margin: top 8px;
+        padding: 15px 10px 15px 10px;
+      }
+    h4 {
+        margin-top: 20px;
+        padding: 10px 15px 10px;
       }
     .container {
         display: flex;
@@ -55,14 +62,14 @@
         border: 0;
         font-size: 100%;
         vertical-align: baseline;
-        font-family: jost, serif;
+        font-family: Montserrat;
     }
     hr {
         border-top: 2px solid black;
         width:  95%;
     }
     article {
-      padding: 10px 50px 10px 50px; 
+      padding: 0px 50px 10px 50px; 
   }
   .carousel-container {
     padding: 10px 50px 20px 50px; 
