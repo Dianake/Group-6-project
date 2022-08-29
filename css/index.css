@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 .navbar-toggler{ 	
     align-items: left;
 } 
 
-      .form-inline {
-        justify-content: right;
-      }
-
+.navbar-custom {
+  background-color: peachpuff;
+}
+.nav-link {
+  color: black;
+}
       body, html {
         height: 100%;
         background-color: #e5e5f7;
     }
-    
     .hero-image {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./Images/mapunsplash.avif");
+      background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Images/annie-spratt-qyAka7W5uMY-unsplash.jpg");
       height: 80%;
       background-position: center;
       background-repeat: no-repeat;
@@ -28,10 +29,17 @@
       transform: translate(-50%, -50%);
       color: white
     }
-    h2, h3 {
+    h2, h4 {
         text-align: center;
         color: black;
-        padding: 10px 0 10px;
+      }
+      h2 {
+        margin: top 8px;
+        padding: 15px 10px 15px 10px;
+      }
+    h4 {
+        margin-top: 20px;
+        padding: 10px 15px 10px;
       }
     .container {
         display: flex;
@@ -47,37 +55,37 @@
       width: 100%;
     }
   }
-   * {
-     box-sizing: border-box;
- }
+   
     html, body, div, img {
         margin: 0;
         padding: 0;
         border: 0;
         font-size: 100%;
         vertical-align: baseline;
-        font-family: jost, serif;
+        font-family: Montserrat;
     }
-    article
-{
-    padding:5px;
-    margin:10px;
-}
     hr {
         border-top: 2px solid black;
         width:  95%;
     }
+    article {
+      padding: 0px 50px 10px 50px; 
+  }
+  .carousel-container {
+    padding: 10px 50px 20px 50px; 
+}
     footer {
-        display: flex; 
-        justify-content: center; 
-        background-color: #ffb6505e;
-        height: 100px;
-        padding: 30px;
-      }
-      footer a {
-        margin: 5px;
-        text-decoration: none!important;
-      }
+      display: flex; 
+      justify-content: center; 
+      background-color: #ffb6505e;
+      height: 100px;
+      padding: 30px;
+    }
+    footer a {
+      margin: 5px;
+      text-decoration: none!important;
+    }
+
       .social-icon {
         display: inline-flex;
         width: 25px;
