@@ -41,17 +41,37 @@
     ></script>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <i class="fa-solid fa-water"></i>
+  <nav class="navbar navbar-expand-lg navbar-custom prefers-reduced-motion">
+  <ul class="navbar-nav mx-auto"></ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-water menu"></i></span>
+        </button>
+        <div class="navbar-nav">
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Destinations
+          </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         <a class="dropdown-item" href="./africa.html">Africa</a>
+        <a class="dropdown-item" href="./americas.html">Americas</a>
+       <a class="dropdown-item" href="./europe.html">Europe</a>
+       <a class="dropdown-item" href="./apac.html">Asia and the Pacific</a>
       </div>
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">DESTINATIONS</a></li>
-        <li><a href="#">GALLERY</a></li>
-        <li><a href="#">CONTACT US</a></li>
-      </ul>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactus.html">Contact Us</a>
+            </li>
+      </li>
+    </ul>
+          </div>
+        </div>
+        </nav> 
+    </div>
+  </div>
     <div class="row1">
       <div class="column1">
         <h2>Americas</h2>
@@ -156,5 +176,48 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="footer">
+        <div class="columnn1">
+          <h3>Travel the World</h3>
+          <p>
+            Our goal is to provide an unforgetable experience
+            <br />
+            in some of the most astounding locations in the world.
+          </p>
+          <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Popular Places</a>
+            <a href="#">Reviews</a>
+          </div>
+        </div>
+        <div class="column2">
+          <h3>Newsletter</h3>
+
+          <input type="email" placeholder="Your email address" required />
+          <button onclick="revealMessage()" class="newsletter-btn">
+            SUBSCRIBE NOW 🔔
+          </button>
+          <p id="hiddenMessage" style="display: none">
+            You get 10% off in your first booking!🔥
+          </p>
+        </div>
+        <div class="column3">
+          <h3>Contact</h3>
+          <p>560, GH Road, GR</p>
+          <p>Greece, Athens, GR</p>
+          <div class="socialicons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <p></p>
+        </div>
+      </div>
+      <div class="empty"></div>
+    </footer>
   </body>
 </html>

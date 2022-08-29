@@ -1,0 +1,276 @@
+.jumbotron {
+    background-color: aqua;
+    color: #FFF
+    border-radius: 0px;
+    }
+
+    .jumbotron-sm {
+    padding-top: 24px;
+    padding-bottom: 24px; 
+}
+
+    .jumbotron small {
+    color:#717170;
+    }
+    .h1 small {
+    font-size: 24px;
+    }
+
+    .contact {
+        color: #717171;
+    }
+
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo {
+      font-size: 60px;
+      padding-right: 90%;
+    }
+    nav {
+      background: #ddaf8c;
+    
+      width: 100%;
+      text-align: right;
+      padding-bottom: 0.2%;
+    }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 17px;
+      font-weight: 500px;
+      margin-right: 200px;
+    }
+    nav ul li a:hover {
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+    }
+
+    .footer {
+      padding: 20px;
+      background-color: #ddaf8c;
+      padding: 80px 5%;
+      display: flex;
+      margin-top: 100px;
+    }
+    .column2 {
+      flex-grow: 1;
+    }
+    .column2 h3 {
+      text-align: left;
+    }
+    
+    .footer div h3 {
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    
+    .columnn1 p {
+      font-size: 20px;
+      max-width: 600px;
+      padding-right: 200px;
+    }
+    
+    .columnn1 a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    
+    .columnn1 a:hover {
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+    }
+    
+    .newsletter-btn {
+      background: transparent;
+      border: 2px solid white;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+    
+    .socialicons {
+      margin-top: 30px;
+    }
+    .socialicons i {
+      font-size: 32px;
+      margin: 10px;
+    }
+    .empty {
+      padding: 50px;
+      background-color: white;
+      padding-left: 300px;
+    }
+    
+    .newsletter input {
+      width: 300px;
+      height: 45px;
+      border-radius: 4px;
+      margin-top: 20px;
+      border: none;
+      font-size: 20px;
+    }
+    .newsletter-btn {
+      background: rgb(190, 150, 114);
+    
+      border-radius: 10px;
+      font-size: 20px;
+    }
+    
+    .newsletter-btn:hover {
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+    }
+    
+    #hiddenMessage {
+      color: white;
+      font-size: 30px;
+      font-weight: 600;
+    }
+    
+    @media screen and (min-width: 300px) and (max-width: 800px) {
+      .nav_menu {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        margin: 2rem;
+        font-size: 1.2rem;
+        display: none;
+      }
+    
+      input[type="checkbox"]:checked ~ .nav_menu {
+        display: block;
+      }
+      .emptybar {
+        height: 100%;
+        width: 50%;
+      }
+    
+      .column1 {
+        height: 70rem;
+      }
+      .column1 h2 {
+        font-size: 50px;
+        margin-left: 7%;
+        text-align: left;
+        width: 300px;
+      }
+      .column1 p {
+        width: 250px;
+        margin-left: 7%;
+      }
+      .columnn1 a:hover {
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+      }
+    
+      .booking-form-box {
+        max-width: 100%;
+        position: absolute;
+        margin-left: 0%;
+      }
+      .column1 .booking-form-box {
+        margin-left: 7%;
+        margin-top: 4%;
+      }
+      .row1 h1 {
+        margin-left: 7%;
+      }
+    
+      .container1 {
+        margin-left: 7%;
+      }
+      .card:hover ~ .card {
+        position: relative;
+        left: 50px;
+        transition: 0.4s ease-out;
+      }
+      .card:hover .stroke {
+        stroke-dashoffset: 200;
+        transition: 0.6s ease-out;
+      }
+      .footer {
+        display: block;
+        margin-left: 7%;
+      }
+    }
+
+
+
+
+    /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    
+  }

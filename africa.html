@@ -42,29 +42,45 @@
     ></script>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
-        <label for="nav__checkbox" class="nav__toggle">
-          <i class="fa-solid fa-water menu"></i>
-        </label>
-
-        <ul class="nav_menu">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">DESTINATIONS</a></li>
-          <li><a href="#">GALLERY</a></li>
-          <li><a href="#">CONTACT US</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-custom prefers-reduced-motion">
+  <ul class="navbar-nav mx-auto"></ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-water menu"></i></span>
+        </button>
+        <div class="navbar-nav">
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Destinations
+          </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         <a class="dropdown-item" href="./africa.html">Africa</a>
+        <a class="dropdown-item" href="./americas.html">Americas</a>
+       <a class="dropdown-item" href="./europe.html">Europe</a>
+       <a class="dropdown-item" href="./apac.html">Asia and the Pacific</a>
       </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactus.html">Contact Us</a>
+            </li>
+      </li>
+    </ul>
+          </div>
+        </div>
+        </nav> 
+    </div>
+  </div>
     <div class="row1">
       <div class="column1">
         <h2>Africa</h2>
         <p>
           Take a look at some of the most popular attractions across Africa,
-          diverse landscapes and have the chance to meet ethnic groups with our
+          diverse landscapes and have the chance to meet different cultural groups with our
           guides. Wild Safaris, hiking in the gigantic African mountains and
-          dancing to African reggae in the streets of Malawi are just a few of
+          partying at a festival in Uganda are just a few of
           the activities waiting for you to enjoy!
         </p>
         <!--booking form-->
@@ -136,7 +152,7 @@
     <div class="container1">
       <div class="card">
         <img src="./pictures/africa-safari.jpg" />
-        <h4 class="title">National Park Senegreti,Tanzania</h4>
+        <h4 class="title">National Park Serengeti,Tanzania</h4>
         <div class="bar">
           <div class="emptybar"></div>
           <div class="filledbar"></div>
@@ -177,8 +193,8 @@
             in some of the most astounding locations in the world.
           </p>
           <div class="links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
+           <a href="./index.html">HOME</a>
+            <a href="./aboutus.htm">About</a>
             <a href="#">Popular Places</a>
             <a href="#">Reviews</a>
           </div>

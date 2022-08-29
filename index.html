@@ -6,30 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href=".css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/3210cf72d8.js" crossorigin="anonymous"></script>
     <title>Sustainable Travel</title>
 </head>
 <body>
     <div class="fixed-top">
+
 <!--Nav bar-->    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light prefers-reduced-motion">
-        <ul class="navbar-nav mx-auto"></ul>
-        <a class="navbar-brand" href="#">HOME</a>
+<nav class="navbar navbar-expand-lg navbar-custom prefers-reduced-motion">
+  <ul class="navbar-nav mx-auto"></ul>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-water menu"></i></span>
         </button>
+        <div class="navbar-nav">
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Destinations
+          </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         <a class="dropdown-item" href="./africa.html">Africa</a>
+        <a class="dropdown-item" href="./americas.html">Americas</a>
+       <a class="dropdown-item" href="./europe.html">Europe</a>
+       <a class="dropdown-item" href="./apac.html">Asia and the Pacific</a>
+      </div>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" href="#">Destinations</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link href="#">Contact Us</a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactus.html">Contact Us</a>
+            </li>
+      </li>
+    </ul>
           </div>
         </div>
-<!--Inline search-->  
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Enter your destination" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 text-dark" type="submit">Search</button>
-          </form>
         </nav> 
     </div>
   </div>
@@ -41,22 +53,22 @@
               <p>ethical and responsible tourism</p>
             </div>
           </div>
-<h2>What makes this experience special?</h1>  
+<h2>What makes this experience special?</h2>  
           <!--IMAGE OPTIONS --> 
         <div class="container">
             <img class="item" src="./Images/trainsq.avif" alt="Train travelling through the countryside">
             <img class="item" src="./Images/seasq2.avif" alt="A beach with trees from above">
             <img class="item" src="./Images/booksq.avif" alt="Mobile phone, sunglass and cards">
          </div>
-         
-          <h3>Stress-free - Sustainable - Support Culture</h3>
+          <h4>Stress-free - Sustainable - Support Culture</h4>
           </div>
-          <article><p>We pride ourselves on our sustainable approach to travel. It is possible to see the world sustainably at the same time as respecting local cultures. But this doesn't mean you won't have fun. </p>
+          <article><p>We pride ourselves on our sustainable approach to travel. It is possible to see the world sustainably at the same time as respecting local cultures. But this doesn't mean you won't have fun! </p>
             
             <p> We have local knowledge in every corner of the world to bring you incredible experiences! Learn how to cook in Mexico, party in Uganda, get close to nature in the Balkans. Whatever your interests and your budget, we have a travel solution to take the stress out of your planning.</p></article>
           <hr>
 
 <!--Carousel--> 
+<div class="carousel-container">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -65,23 +77,23 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block mx-auto w-100" src="./Images/360_F_303243854_NPuaLHQwZa2xBoigTaRmnhR1BGYP5zJJ.jpg" alt="cooking in Mexico">
+                <img class="d-block mx-auto w-100" src="./Images/360_F_303243854_NPuaLHQwZa2xBoigTaRmnhR1BGYP5zJJ.jpg" alt="cooking in Mexico, woman with spoon in a giant bowl">
                 <div class="carousel-caption">
                   <h5>COOK IN MEXICO</h5>
-                  <p>Learn from locals</p>
+                  <p><a href="./americas.html" class="text-reset">Learn from locals</a></p>
                 </div></div>
               <div class="carousel-item">
                 <img class="d-block mx-auto w-100" src="./Images/nyege.jpg" alt="Man sings into microphone while crowd surrounds him">
                 <div class="carousel-caption">
-                  <h5>NYEGE FESTIVAL</h5>
-                  <p>Party in Uganda</p>
+                  <h5>NYEGE NYEGE FESTIVAL</h5>
+                  <p><a href="./africa.html" class="text-reset">Party in Uganda</a></p>
                 </div>
               </div>
               <div class="carousel-item"><div class="d-flex justify-content-center">
-                <img class="d-block mx-auto w-100" src="./Images/bosniahike.jpg" alt="man hikes through stonce arch">
+                <img class="d-block mx-auto w-100" src="./Images/bosniahike.jpg" alt="man hikes through stone arch">
                 <div class="carousel-caption">
                   <h5>Hike the Balkans</h5>
-                  <p>Discover beautiful Bosnia</p>
+                  <p><a href="./europe.html" class="text-reset">Discover beautiful Bosnia</a></p>
                 </div></div></div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -93,7 +105,7 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-
+        </div>
 <!--Footer social--> 
 <footer>
     <a href="https://twitter.com" target="_blank">
