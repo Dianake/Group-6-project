@@ -11,28 +11,13 @@
 body { 
   padding-top: 60px; 
 }
-  nav {
-    background: #ddaf8c;
-  
-    width: 100%;
-    text-align: right;
-    padding-bottom: 0.2%;
-  }
-  nav ul li {
-    list-style: none;
-    display: inline-block;
-  }
-  nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 17px;
-    font-weight: 500px;
-    margin-right: 200px;
-  }
-  nav ul li a:hover {
-    -webkit-text-stroke: 1px white;
-    color: transparent;
-  }
+ .navbar-toggler{ 	
+    align-items: left;
+} 
+
+.navbar-custom {
+  background-color: peachpuff;
+}
 .nav-link {
   color: black;
 }
