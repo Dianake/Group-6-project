@@ -4,7 +4,9 @@
 hr.dotted {
   border-top: 3px dotted #bbb;
 }
-
+body { 
+  padding-top: 60px; 
+}
 nav {
   background: #ddaf8c;
   width: 100%;
