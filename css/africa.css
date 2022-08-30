@@ -37,6 +37,9 @@ nav {
 .nav__checkbox {
   display: none;
 }
+.nav-link {
+  color: black;
+}
 
 .close {
   display: none;
