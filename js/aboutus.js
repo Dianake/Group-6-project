@@ -12,7 +12,7 @@ function revealMessage() {
   }
 }
 
-/*button to change color */
+/*button to change background */
 function color(value){
   document.getElementById("aboutus").style.background=value
   document.getElementById("aboutus").style.backgroundSize = "cover";
