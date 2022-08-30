@@ -41,17 +41,37 @@
     ></script>
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <i class="fa-solid fa-water"></i>
+    <nav class="navbar navbar-expand-lg navbar-custom prefers-reduced-motion">
+  <ul class="navbar-nav mx-auto"></ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-water menu"></i></span>
+        </button>
+        <div class="navbar-nav">
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Destinations
+          </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+         <a class="dropdown-item" href="./africa.html">Africa</a>
+        <a class="dropdown-item" href="./americas.html">Americas</a>
+       <a class="dropdown-item" href="./europe.html">Europe</a>
+       <a class="dropdown-item" href="./apac.html">Asia and the Pacific</a>
       </div>
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">DESTINATIONS</a></li>
-        <li><a href="#">GALLERY</a></li>
-        <li><a href="#">CONTACT US</a></li>
-      </ul>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contactus.html">Contact Us</a>
+            </li>
+      </li>
+    </ul>
+          </div>
+        </div>
+        </nav> 
+    </div>
+  </div>
     <div class="row1">
       <div class="column1">
         <h2>Europe</h2>
@@ -74,9 +94,9 @@
           </div>
           <div class="booking-form">
             <label>Travel From</label>
-            <input type="text" class="form-control" placegolder="City" />
+            <input type="text" class="form-control" placeholder="City" />
             <label>Travel To</label>
-            <input type="text" class="form-control" placegolder="City" />
+            <input type="text" class="form-control" placeholder="City" />
             <div class="input-grp">
               <label>Departing</label>
               <input type="date" class="form-control select-date" />
@@ -168,7 +188,7 @@
             in some of the most astounding locations in the world.
           </p>
           <div class="links">
-            <a href="#">Home</a>
+            <a href="./index.html">Home</a>
             <a href="#">About</a>
             <a href="#">Popular Places</a>
             <a href="#">Reviews</a>
