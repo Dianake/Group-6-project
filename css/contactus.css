@@ -25,6 +25,14 @@
         height: auto;
     }
 
+    .navbar-toggler{ 	
+      align-items: left;
+  } 
+
+  .nav-link {
+    color: black;
+  }
+  
     .logo {
       font-size: 60px;
       padding-right: 90%;
@@ -38,9 +46,10 @@
     }
     nav ul li {
       list-style: none;
-      display:inline-flex;
+      display: inline;
     }
     nav ul li a {
+      float:inline-start;
       text-decoration: none;
       color: black;
       font-size: 17px;
@@ -51,9 +60,7 @@
       -webkit-text-stroke: 1px white;
       color: transparent;
     }
-.nav-link {
-  color: black;
-}
+
     .footer {
       padding: 20px;
       background-color: #ddaf8c;
@@ -99,7 +106,7 @@
     .links a {
      display:inline;
     }
-    
+
     .column1 a:hover {
       -webkit-text-stroke: 1px white;
       color: transparent;
