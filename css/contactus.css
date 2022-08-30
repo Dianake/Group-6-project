@@ -51,7 +51,9 @@
       -webkit-text-stroke: 1px white;
       color: transparent;
     }
-
+.nav-link {
+  color: black;
+}
     .footer {
       padding: 20px;
       background-color: #ddaf8c;
