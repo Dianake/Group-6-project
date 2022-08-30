@@ -30,6 +30,9 @@
     -webkit-text-stroke: 1px white;
     color: transparent;
   }
+.nav-link {
+  color: black;
+}
   .column1 {
     background-color: #eee;
     height: 550px;
