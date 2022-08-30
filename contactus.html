@@ -14,6 +14,7 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
      <script src="https://kit.fontawesome.com/3210cf72d8.js" crossorigin="anonymous"></script>
+     <script src="./js/aboutus.js"></script>
      <title>Contact us</title>
 </head>
 <body>
@@ -24,6 +25,7 @@
         <ul>
           <li><a href="./index.html">HOME</a></li>
           <li><a href="./aboutus.html">ABOUT US</a></li>
+          <li><a href="./africa.html">AFRICA</a></li>
         </ul>
       </nav>
     <!-- START of Contact form -->
@@ -112,45 +114,45 @@
 <!-- END of Contact form -->
 <footer>
     <div class="footer">
-      <div class="columnn1">
+      <div class="column1">
         <h3>Travel the World</h3>
         <p>
-          Our goal is to provide an unforgetable experience
-          <br />
-          in some of the most astounding locations in the world.
+          Our goal is to provide an unforgetable experience in
+          some of the most astounding locations in the world.
         </p>
         <div class="links">
-            <a href="./index.html">HOME</a>
-            <a href="./africa.html">AFRICA</a>
-            <a href="./americas.html">AMERICAS</a>
-            <a href="./apac.html">APAC</a>
-            <a href="./europe.html">EUROPE</a>
-            <a href="./aboutus.html">ABOUT US</a>
+            <a href="./index.html" target="_blank">Home |</a>
+            <a href="./aboutus.html" target="_blank">About Us</a>
+            <br>
+            <a href="./africa.html" target="_blank">Africa |</a>
+            <a href="./americas.html" target="_blank">Americas |</a>
+            <a href="./apac.html" target="_blank">APAC |</a>
+            <a href="./europe.html" target="_blank">Europe</a>
         </div>
       </div>
+      <br>
       <div class="column2">
         <h3>Newsletter</h3>
-
-        <input type="email" placeholder="Your email address" required />
-        <button onclick="revealMessage()" class="newsletter-btn">
-          SUBSCRIBE NOW 🔔
-        </button>
-        <p id="hiddenMessage" style="display: none">
-          You get 10% off in your first booking!🔥
-        </p>
+        <div class="newsletter">
+          <input type="email" placeholder="Your email address" />
+          <button onclick="revealMessage()" class="newsletter-btn">
+            SUBSCRIBE NOW🔔
+          </button>
+          <p id="hiddenMessage" style="display: none">
+            You get 10% off your first booking!🔥
+          </p>
+        </div>
       </div>
       <div class="column3">
+        <h3>Social media</h3>
         <div class="socialicons">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fa-brands fa-pinterest"></i>
-          <i class="fa-brands fa-github"></i>
+          <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="http://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
         </div>
-        <p></p>
       </div>
     </div>
-    <div class="empty"></div>
   </footer>
 </body>
 </html>
